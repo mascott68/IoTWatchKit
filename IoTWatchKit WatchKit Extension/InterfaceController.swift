@@ -13,7 +13,9 @@ import Foundation
 class InterfaceController: WKInterfaceController, MQTTConnectionStatusListener, MQTTMessageListener  {
 
     let mqttClient: MQTTClient = MQTTClient.sharedInstance as MQTTClient
-    let topic: String = "dks0mrsybzsw90k/input/watch"
+    
+    // Replace domain with the correct domain in your 2lemetry portal
+    let topic: String = "DOMAIN/input/watch"
     
     @IBOutlet weak var message: WKInterfaceLabel!
     @IBOutlet weak var image: WKInterfaceImage!
@@ -23,17 +25,18 @@ class InterfaceController: WKInterfaceController, MQTTConnectionStatusListener, 
    
     @IBAction func handleSwitch(value: Bool) {
         if value {
-            mqttClient.sendMessage( "dks0mrsybzsw90k/input/watch", msg: "{\"test\":\"on\"}")
+            mqttClient.sendMessage( topic, msg: "{\"test\":\"on\"}")
         } else {
-            mqttClient.sendMessage( "dks0mrsybzsw90k/input/watch", msg: "{\"test\":\"off\"}")
+            mqttClient.sendMessage( topic, msg: "{\"test\":\"off\"}")
         }
-    }
+     }
     
     
     func setupMQTTClient () {
        // Replace username and password with correct 2lemetry credentials  https://app.thingfabric.com/#/auth
         
-        mqttClient.setupMQTT("q.m2m.io", port: 1883, clientID: "watch", username: "USERNAME", password: "PASSWORD", keepAlive:30, clean:true);
+        mqttClient.setupMQTT("q.m2m.io", port: 1883, clientID: "watch", username: "1f93694f-9d41-48eb-a0ea-b82278fc870c", password: "548b4916c95c46fa0eb71d101b02efc8", keepAlive:30, clean:true);
+//        mqttClient.setupMQTT("q.m2m.io", port: 1883, clientID: "watch", username: "USERNAME", password: "PASSWORD", keepAlive:30, clean:true);
         
     }
     
