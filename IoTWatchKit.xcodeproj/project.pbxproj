@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82C522171A7009430000FEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C522161A7009430000FEBF /* AppDelegate.swift */; };
+		82C522191A7009430000FEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C522181A7009430000FEBF /* ViewController.swift */; };
+		82C5221C1A7009430000FEBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C5221A1A7009430000FEBF /* Main.storyboard */; };
+		82C5221E1A7009430000FEBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C5221D1A7009430000FEBF /* Images.xcassets */; };
+		82C522211A7009430000FEBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C5221F1A7009430000FEBF /* LaunchScreen.xib */; };
+		82C5222D1A7009430000FEBF /* IoTWatchKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5222C1A7009430000FEBF /* IoTWatchKitTests.swift */; };
+		82C5223F1A7009C20000FEBF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5223E1A7009C20000FEBF /* InterfaceController.swift */; };
+		82C522411A7009C20000FEBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C522401A7009C20000FEBF /* Images.xcassets */; };
+		82C522451A7009C20000FEBF /* IoTWatchKit WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 82C522441A7009C20000FEBF /* IoTWatchKit WatchKit App.app */; };
+		82C5224D1A7009C20000FEBF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C5224B1A7009C20000FEBF /* Interface.storyboard */; };
+		82C5224F1A7009C20000FEBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C5224E1A7009C20000FEBF /* Images.xcassets */; };
+		82C522521A7009C20000FEBF /* IoTWatchKit WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 82C5223A1A7009C20000FEBF /* IoTWatchKit WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		82C522611A700A620000FEBF /* MQTTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5225B1A700A620000FEBF /* MQTTClient.swift */; };
+		82C522621A700A620000FEBF /* MQTTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5225C1A700A620000FEBF /* MQTTDecoder.swift */; };
+		82C522631A700A620000FEBF /* MQTTEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5225D1A700A620000FEBF /* MQTTEncoder.swift */; };
+		82C522641A700A620000FEBF /* MQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5225E1A700A620000FEBF /* MQTTMessage.swift */; };
+		82C522651A700A620000FEBF /* MQTTSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5225F1A700A620000FEBF /* MQTTSession.swift */; };
+		82C522661A700A620000FEBF /* MQttTxFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C522601A700A620000FEBF /* MQttTxFlow.swift */; };
+		82C5226F1A700B680000FEBF /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C5226E1A700B680000FEBF /* WatchKit.framework */; };
+		82C522741A70193D0000FEBF /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C522701A70193D0000FEBF /* off.png */; };
+		82C522751A70193D0000FEBF /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C522701A70193D0000FEBF /* off.png */; };
+		82C522761A70193D0000FEBF /* off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C522711A70193D0000FEBF /* off@2x.png */; };
+		82C522771A70193D0000FEBF /* off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C522711A70193D0000FEBF /* off@2x.png */; };
+		82C522781A70193D0000FEBF /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C522721A70193D0000FEBF /* on.png */; };
+		82C522791A70193D0000FEBF /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C522721A70193D0000FEBF /* on.png */; };
+		82C5227A1A70193D0000FEBF /* on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C522731A70193D0000FEBF /* on@2x.png */; };
+		82C5227B1A70193D0000FEBF /* on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C522731A70193D0000FEBF /* on@2x.png */; };
+		82C5227D1A701F290000FEBF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C5227C1A701F290000FEBF /* SwiftyJSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82C522271A7009430000FEBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C522091A7009430000FEBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C522101A7009430000FEBF;
+			remoteInfo = IoTWatchKit;
+		};
+		82C522461A7009C20000FEBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C522091A7009430000FEBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C522431A7009C20000FEBF;
+			remoteInfo = "IoTWatchKit WatchKit App";
+		};
+		82C522501A7009C20000FEBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C522091A7009430000FEBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C522391A7009C20000FEBF;
+			remoteInfo = "IoTWatchKit WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		82C522591A7009C20000FEBF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				82C522521A7009C20000FEBF /* IoTWatchKit WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		82C522111A7009430000FEBF /* IoTWatchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoTWatchKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C522151A7009430000FEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C522161A7009430000FEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82C522181A7009430000FEBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82C5221B1A7009430000FEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82C5221D1A7009430000FEBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82C522201A7009430000FEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		82C522261A7009430000FEBF /* IoTWatchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IoTWatchKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C5222B1A7009430000FEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C5222C1A7009430000FEBF /* IoTWatchKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IoTWatchKitTests.swift; sourceTree = "<group>"; };
+		82C5223A1A7009C20000FEBF /* IoTWatchKit WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "IoTWatchKit WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C5223D1A7009C20000FEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C5223E1A7009C20000FEBF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		82C522401A7009C20000FEBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82C522441A7009C20000FEBF /* IoTWatchKit WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IoTWatchKit WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C5224A1A7009C20000FEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C5224C1A7009C20000FEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		82C5224E1A7009C20000FEBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82C5225B1A700A620000FEBF /* MQTTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTClient.swift; sourceTree = "<group>"; };
+		82C5225C1A700A620000FEBF /* MQTTDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTDecoder.swift; sourceTree = "<group>"; };
+		82C5225D1A700A620000FEBF /* MQTTEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTEncoder.swift; sourceTree = "<group>"; };
+		82C5225E1A700A620000FEBF /* MQTTMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTMessage.swift; sourceTree = "<group>"; };
+		82C5225F1A700A620000FEBF /* MQTTSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTSession.swift; sourceTree = "<group>"; };
+		82C522601A700A620000FEBF /* MQttTxFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQttTxFlow.swift; sourceTree = "<group>"; };
+		82C5226E1A700B680000FEBF /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		82C522701A70193D0000FEBF /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		82C522711A70193D0000FEBF /* off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "off@2x.png"; sourceTree = "<group>"; };
+		82C522721A70193D0000FEBF /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		82C522731A70193D0000FEBF /* on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "on@2x.png"; sourceTree = "<group>"; };
+		82C5227C1A701F290000FEBF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82C5220E1A7009430000FEBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C522231A7009430000FEBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C522371A7009C20000FEBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C5226F1A700B680000FEBF /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82C522081A7009430000FEBF = {
+			isa = PBXGroup;
+			children = (
+				82C5226E1A700B680000FEBF /* WatchKit.framework */,
+				82C522131A7009430000FEBF /* IoTWatchKit */,
+				82C522291A7009430000FEBF /* IoTWatchKitTests */,
+				82C5223B1A7009C20000FEBF /* IoTWatchKit WatchKit Extension */,
+				82C522481A7009C20000FEBF /* IoTWatchKit WatchKit App */,
+				82C522121A7009430000FEBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82C522121A7009430000FEBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82C522111A7009430000FEBF /* IoTWatchKit.app */,
+				82C522261A7009430000FEBF /* IoTWatchKitTests.xctest */,
+				82C5223A1A7009C20000FEBF /* IoTWatchKit WatchKit Extension.appex */,
+				82C522441A7009C20000FEBF /* IoTWatchKit WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82C522131A7009430000FEBF /* IoTWatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				82C522161A7009430000FEBF /* AppDelegate.swift */,
+				82C522181A7009430000FEBF /* ViewController.swift */,
+				82C5221A1A7009430000FEBF /* Main.storyboard */,
+				82C5221D1A7009430000FEBF /* Images.xcassets */,
+				82C5221F1A7009430000FEBF /* LaunchScreen.xib */,
+				82C522141A7009430000FEBF /* Supporting Files */,
+			);
+			path = IoTWatchKit;
+			sourceTree = "<group>";
+		};
+		82C522141A7009430000FEBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82C522151A7009430000FEBF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82C522291A7009430000FEBF /* IoTWatchKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				82C5222C1A7009430000FEBF /* IoTWatchKitTests.swift */,
+				82C5222A1A7009430000FEBF /* Supporting Files */,
+			);
+			path = IoTWatchKitTests;
+			sourceTree = "<group>";
+		};
+		82C5222A1A7009430000FEBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82C5222B1A7009430000FEBF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82C5223B1A7009C20000FEBF /* IoTWatchKit WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				82C522671A700A840000FEBF /* Images */,
+				82C5225A1A700A620000FEBF /* MQTT */,
+				82C5223E1A7009C20000FEBF /* InterfaceController.swift */,
+				82C5227C1A701F290000FEBF /* SwiftyJSON.swift */,
+				82C522401A7009C20000FEBF /* Images.xcassets */,
+				82C5223C1A7009C20000FEBF /* Supporting Files */,
+			);
+			path = "IoTWatchKit WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		82C5223C1A7009C20000FEBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82C5223D1A7009C20000FEBF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82C522481A7009C20000FEBF /* IoTWatchKit WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				82C5224B1A7009C20000FEBF /* Interface.storyboard */,
+				82C5224E1A7009C20000FEBF /* Images.xcassets */,
+				82C522491A7009C20000FEBF /* Supporting Files */,
+			);
+			path = "IoTWatchKit WatchKit App";
+			sourceTree = "<group>";
+		};
+		82C522491A7009C20000FEBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82C5224A1A7009C20000FEBF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82C5225A1A700A620000FEBF /* MQTT */ = {
+			isa = PBXGroup;
+			children = (
+				82C5225B1A700A620000FEBF /* MQTTClient.swift */,
+				82C5225C1A700A620000FEBF /* MQTTDecoder.swift */,
+				82C5225D1A700A620000FEBF /* MQTTEncoder.swift */,
+				82C5225E1A700A620000FEBF /* MQTTMessage.swift */,
+				82C5225F1A700A620000FEBF /* MQTTSession.swift */,
+				82C522601A700A620000FEBF /* MQttTxFlow.swift */,
+			);
+			path = MQTT;
+			sourceTree = "<group>";
+		};
+		82C522671A700A840000FEBF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				82C522701A70193D0000FEBF /* off.png */,
+				82C522711A70193D0000FEBF /* off@2x.png */,
+				82C522721A70193D0000FEBF /* on.png */,
+				82C522731A70193D0000FEBF /* on@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82C522101A7009430000FEBF /* IoTWatchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C522301A7009430000FEBF /* Build configuration list for PBXNativeTarget "IoTWatchKit" */;
+			buildPhases = (
+				82C5220D1A7009430000FEBF /* Sources */,
+				82C5220E1A7009430000FEBF /* Frameworks */,
+				82C5220F1A7009430000FEBF /* Resources */,
+				82C522591A7009C20000FEBF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82C522511A7009C20000FEBF /* PBXTargetDependency */,
+			);
+			name = IoTWatchKit;
+			productName = IoTWatchKit;
+			productReference = 82C522111A7009430000FEBF /* IoTWatchKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82C522251A7009430000FEBF /* IoTWatchKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C522331A7009430000FEBF /* Build configuration list for PBXNativeTarget "IoTWatchKitTests" */;
+			buildPhases = (
+				82C522221A7009430000FEBF /* Sources */,
+				82C522231A7009430000FEBF /* Frameworks */,
+				82C522241A7009430000FEBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82C522281A7009430000FEBF /* PBXTargetDependency */,
+			);
+			name = IoTWatchKitTests;
+			productName = IoTWatchKitTests;
+			productReference = 82C522261A7009430000FEBF /* IoTWatchKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82C522391A7009C20000FEBF /* IoTWatchKit WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C522561A7009C20000FEBF /* Build configuration list for PBXNativeTarget "IoTWatchKit WatchKit Extension" */;
+			buildPhases = (
+				82C522361A7009C20000FEBF /* Sources */,
+				82C522371A7009C20000FEBF /* Frameworks */,
+				82C522381A7009C20000FEBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82C522471A7009C20000FEBF /* PBXTargetDependency */,
+			);
+			name = "IoTWatchKit WatchKit Extension";
+			productName = "IoTWatchKit WatchKit Extension";
+			productReference = 82C5223A1A7009C20000FEBF /* IoTWatchKit WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		82C522431A7009C20000FEBF /* IoTWatchKit WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C522531A7009C20000FEBF /* Build configuration list for PBXNativeTarget "IoTWatchKit WatchKit App" */;
+			buildPhases = (
+				82C522421A7009C20000FEBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IoTWatchKit WatchKit App";
+			productName = "IoTWatchKit WatchKit App";
+			productReference = 82C522441A7009C20000FEBF /* IoTWatchKit WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82C522091A7009430000FEBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = 2lemetry;
+				TargetAttributes = {
+					82C522101A7009430000FEBF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					82C522251A7009430000FEBF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 82C522101A7009430000FEBF;
+					};
+					82C522391A7009C20000FEBF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					82C522431A7009C20000FEBF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 82C5220C1A7009430000FEBF /* Build configuration list for PBXProject "IoTWatchKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82C522081A7009430000FEBF;
+			productRefGroup = 82C522121A7009430000FEBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82C522101A7009430000FEBF /* IoTWatchKit */,
+				82C522251A7009430000FEBF /* IoTWatchKitTests */,
+				82C522391A7009C20000FEBF /* IoTWatchKit WatchKit Extension */,
+				82C522431A7009C20000FEBF /* IoTWatchKit WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82C5220F1A7009430000FEBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C5221C1A7009430000FEBF /* Main.storyboard in Resources */,
+				82C522211A7009430000FEBF /* LaunchScreen.xib in Resources */,
+				82C5221E1A7009430000FEBF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C522241A7009430000FEBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C522381A7009C20000FEBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C522781A70193D0000FEBF /* on.png in Resources */,
+				82C5227A1A70193D0000FEBF /* on@2x.png in Resources */,
+				82C522741A70193D0000FEBF /* off.png in Resources */,
+				82C522451A7009C20000FEBF /* IoTWatchKit WatchKit App.app in Resources */,
+				82C522761A70193D0000FEBF /* off@2x.png in Resources */,
+				82C522411A7009C20000FEBF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C522421A7009C20000FEBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C522791A70193D0000FEBF /* on.png in Resources */,
+				82C5227B1A70193D0000FEBF /* on@2x.png in Resources */,
+				82C522751A70193D0000FEBF /* off.png in Resources */,
+				82C5224D1A7009C20000FEBF /* Interface.storyboard in Resources */,
+				82C522771A70193D0000FEBF /* off@2x.png in Resources */,
+				82C5224F1A7009C20000FEBF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82C5220D1A7009430000FEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C522191A7009430000FEBF /* ViewController.swift in Sources */,
+				82C522171A7009430000FEBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C522221A7009430000FEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C5222D1A7009430000FEBF /* IoTWatchKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C522361A7009C20000FEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C522611A700A620000FEBF /* MQTTClient.swift in Sources */,
+				82C522621A700A620000FEBF /* MQTTDecoder.swift in Sources */,
+				82C522641A700A620000FEBF /* MQTTMessage.swift in Sources */,
+				82C5227D1A701F290000FEBF /* SwiftyJSON.swift in Sources */,
+				82C522631A700A620000FEBF /* MQTTEncoder.swift in Sources */,
+				82C522651A700A620000FEBF /* MQTTSession.swift in Sources */,
+				82C522661A700A620000FEBF /* MQttTxFlow.swift in Sources */,
+				82C5223F1A7009C20000FEBF /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82C522281A7009430000FEBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82C522101A7009430000FEBF /* IoTWatchKit */;
+			targetProxy = 82C522271A7009430000FEBF /* PBXContainerItemProxy */;
+		};
+		82C522471A7009C20000FEBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82C522431A7009C20000FEBF /* IoTWatchKit WatchKit App */;
+			targetProxy = 82C522461A7009C20000FEBF /* PBXContainerItemProxy */;
+		};
+		82C522511A7009C20000FEBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82C522391A7009C20000FEBF /* IoTWatchKit WatchKit Extension */;
+			targetProxy = 82C522501A7009C20000FEBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82C5221A1A7009430000FEBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C5221B1A7009430000FEBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82C5221F1A7009430000FEBF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C522201A7009430000FEBF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		82C5224B1A7009C20000FEBF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C5224C1A7009C20000FEBF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82C5222E1A7009430000FEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82C5222F1A7009430000FEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82C522311A7009430000FEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = IoTWatchKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		82C522321A7009430000FEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = IoTWatchKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		82C522341A7009430000FEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IoTWatchKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IoTWatchKit.app/IoTWatchKit";
+			};
+			name = Debug;
+		};
+		82C522351A7009430000FEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IoTWatchKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IoTWatchKit.app/IoTWatchKit";
+			};
+			name = Release;
+		};
+		82C522541A7009C20000FEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = IoTWatchKit_WatchKit_Extension;
+				INFOPLIST_FILE = "IoTWatchKit WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		82C522551A7009C20000FEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = IoTWatchKit_WatchKit_Extension;
+				INFOPLIST_FILE = "IoTWatchKit WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		82C522571A7009C20000FEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IoTWatchKit WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		82C522581A7009C20000FEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IoTWatchKit WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82C5220C1A7009430000FEBF /* Build configuration list for PBXProject "IoTWatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C5222E1A7009430000FEBF /* Debug */,
+				82C5222F1A7009430000FEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82C522301A7009430000FEBF /* Build configuration list for PBXNativeTarget "IoTWatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C522311A7009430000FEBF /* Debug */,
+				82C522321A7009430000FEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82C522331A7009430000FEBF /* Build configuration list for PBXNativeTarget "IoTWatchKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C522341A7009430000FEBF /* Debug */,
+				82C522351A7009430000FEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82C522531A7009C20000FEBF /* Build configuration list for PBXNativeTarget "IoTWatchKit WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C522541A7009C20000FEBF /* Debug */,
+				82C522551A7009C20000FEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82C522561A7009C20000FEBF /* Build configuration list for PBXNativeTarget "IoTWatchKit WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C522571A7009C20000FEBF /* Debug */,
+				82C522581A7009C20000FEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82C522091A7009430000FEBF /* Project object */;
+}
